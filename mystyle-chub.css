@@ -125,13 +125,14 @@ details[open] summary { color: var(--accent); }
 .character { display: grid; grid-template-columns: 1fr; gap: .8rem; }
 
 .char-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 6px;
 }
 
 .char-images img {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     aspect-ratio: 3/4;
     object-fit: cover;
     display: block;
