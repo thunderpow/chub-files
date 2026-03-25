@@ -258,3 +258,34 @@ details[open] summary { color: var(--accent); }
   color: var(--muted);
   margin-top: .15rem;
 }
+
+.spoiler-toggle {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  border: 1px solid var(--border);
+  padding: .7rem 1rem;
+  background: #120f0c;
+}
+
+.spoiler-toggle::before {
+  content: '▸ ';
+  color: var(--accent2);
+}
+
+.spoiler-body {
+  display: none;
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: .8rem 1rem;
+  background: #120f0c;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+#spoiler-toggle:checked ~ .spoiler-body { display: block; }
+#spoiler-toggle:checked ~ .spoiler-toggle::before { content: '▾ '; }
