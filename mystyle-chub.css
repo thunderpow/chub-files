@@ -127,12 +127,14 @@ details[open] summary { color: var(--accent); }
 .char-images {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 6px;
+    gap: 6px !important;
 }
 
 .char-images img {
     width: 100% !important;
     max-width: 100% !important;
+    display: block !important;
+    float: none !important;
     aspect-ratio: 3/4;
     object-fit: cover;
     display: block;
